@@ -1,0 +1,66 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.container-fluid {
+    background: url(../../../img/bg_1920_descl.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.header {
+    background: url(../../../img/header.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 72px;
+}
+.burger {
+    background: none;
+    border: none;    
+}
+.main {
+    height: 276px;
+    margin-top: 60%;
+    margin-bottom: 52px;
+}
+h1 {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Noto Serif", serif;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 40px;
+}
+p {
+    margin-top: 70px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Noto Serif", serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+}
+.buttons {
+    width: 340px;
+    margin: 32px auto;
+}
+.buttons > button {
+    width: 164px;
+    height: 56px;
+    border: 1px solid #52212E;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Noto Serif", serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+.no {
+    background-color: #9F9363;
+}
+.yes {
+    background-color: #B61C3E;
+}

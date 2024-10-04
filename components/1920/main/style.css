@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background: url(../../../img/header.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 72px;
+}
+.burger {
+    background: none;
+    border: none;    
+}
+.divider {
+    background: url(../../../img/divider.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40px;
+}
+.main_section1, .main_section2 {
+    background: url(../../../img/bg_1920_main.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 91vh;
+}
+.footer {
+    background: url(../../../img/bg_1920_footer_main.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 684px;
+}
+.game_board {
+    background: url(../../../img/bg_chest_main.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 465px;
+    width: 676px;
+    margin-right: 103px;
+    margin-left: auto;
+}
+.chest {
+    width: auto;
+    height: 386px;
+    margin: auto auto 10vh -12px;
+    filter: blur(1px);
+}
+.phone {
+    margin-top: 100px;
+}
