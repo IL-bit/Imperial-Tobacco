@@ -43,12 +43,163 @@
     margin-right: 103px;
     margin-left: auto;
 }
+.game_board > img {
+    margin-top: 90px;
+}
+.game {
+    background: url(../../../img/button_game.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 64px;
+    border: none;
+    margin-top: 30px;
+}
 .chest {
+    background: url(../../../img/chest.svg);
+    background-position: center;
+    background-repeat: no-repeat;
     width: auto;
     height: 386px;
-    margin: auto auto 10vh -12px;
     filter: blur(1px);
+    position: absolute; 
+    left: 0;
+    bottom: 0;
+}
+.chest[alt] {
+    font-size: 0;
+    line-height: 0;
 }
 .phone {
-    margin-top: 100px;
+    width: 100%;
+    height: auto;
+}
+.more {
+    width: 94px;
+    height: 94px;
+    background-color: #B61C3E;
+    border-radius: 100px;
+    border: 1.59px solid #52212E;
+    margin-top: 80vh;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Noto Serif", serif;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 16px;
+    box-shadow: 0px 3.19px 25.5px #180302;
+}
+.more > p {
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.game_board > .new {
+    padding-top: 120px;
+    color: #fff;
+    font-family: "Noto Serif", serif;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 88px;
+    text-transform: uppercase;
+    text-shadow: 0px 3.22px 1.61px #180302;
+}
+.game_board > p {
+    margin-top: 18px;
+    color: #fff;
+    font-family: "Noto Serif", serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    text-shadow: 0px 1.61px 1.61px #180302;
+}
+.go_to {
+    margin-top: 20px;
+    width: 193px;
+    height: 56px;
+    background-color: #B61C3E;
+    border: 1px solid #52212E;
+    color: #fff;
+    font-family: "Noto Serif", serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.email {
+    width: 100%;
+    margin-top: 30px;
+}
+.email > a {
+    color: #fff;
+    font-family: "Noto Serif", serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31.6px;
+}
+.email > p {
+    color: #fff;
+    font-family: "Noto Serif", serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 52px;
+}
+.tgbot {
+    width: 100%;
+    margin-top: 20px;
+}
+.tgbot > a {
+    color: #fff;
+    font-family: "Noto Serif", serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31.6px;
+}
+.tgbot > p {
+    color: #fff;
+    font-family: "Noto Serif", serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 52px;
+    text-shadow: 0px 2px 2px #180302;
+}
+.callback {
+    margin-top: 40px;
+}
+.callback > button {
+    width: 206px;
+    height: 48px;
+    background-color: #B61C3E;
+    border: 1px solid #52212E;
+    color: #fff;
+    font-family: "Noto Serif", serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.callback > img {
+    margin-top: 56px;
+}
+.callback > p {
+    margin-top: 30px;
+    color: #BFB9B9;
+    font-family: "Noto Serif", serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-shadow: 0px 2px 2px #180302;
+}
+.callback > ul {
+    list-style: none;
+    padding: 0px;
+}
+.callback > ul > li > a {
+    margin-top: 20px;
+    color: #BFB9B9;
+    font-family: "Noto Serif", serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-shadow: 0px 2px 2px #180302;
 }
