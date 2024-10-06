@@ -1,0 +1,143 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.header {
+    background: url(../../../img/header.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 72px;
+}
+.burger {
+    background: none;
+    border: none;    
+}
+.divider {
+    background: url(../../../img/divider.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40px;
+}
+.main_section1, .main_section2 {
+    background: url(../../../img/bg_1920_main.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 91vh;
+}
+.footer {
+    background: url(../../../img/bg_1920_footer_main.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 684px;
+}
+.game_board {
+    background: url(../../../img/bg_chest_main.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 465px;
+    width: 676px;
+    margin-right: 103px;
+    margin-left: auto;
+}
+.game_board > h2 {
+    padding-top: 110px;
+    color: #fff;
+    font-family: "Noto Serif", serif;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 100%;
+    text-shadow: 0px 4px 2px #180302;
+}
+.game_board > p {
+    text-align: left;
+    margin-left: 51px;
+    margin-top: 39px;
+    color: #fff;
+    font-family: "Noto Serif", serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-shadow: 0px 4px 2px #180302;
+}
+.email {
+    width: 100%;
+    margin-top: 30px;
+}
+.email > a {
+    color: #fff;
+    font-family: "Noto Serif", serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31.6px;
+}
+.email > p {
+    color: #fff;
+    font-family: "Noto Serif", serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 52px;
+}
+.tgbot {
+    width: 100%;
+    margin-top: 20px;
+}
+.tgbot > a {
+    color: #fff;
+    font-family: "Noto Serif", serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31.6px;
+}
+.tgbot > p {
+    color: #fff;
+    font-family: "Noto Serif", serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 52px;
+    text-shadow: 0px 2px 2px #180302;
+}
+.callback {
+    margin-top: 40px;
+}
+.callback > button {
+    width: 206px;
+    height: 48px;
+    background-color: #B61C3E;
+    border: 1px solid #52212E;
+    color: #fff;
+    font-family: "Noto Serif", serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.callback > img {
+    margin-top: 56px;
+}
+.callback > p {
+    margin-top: 30px;
+    color: #BFB9B9;
+    font-family: "Noto Serif", serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-shadow: 0px 2px 2px #180302;
+}
+.callback > ul {
+    list-style: none;
+    padding: 0px;
+}
+.callback > ul > li > a {
+    margin-top: 20px;
+    color: #BFB9B9;
+    font-family: "Noto Serif", serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-shadow: 0px 2px 2px #180302;
+}
