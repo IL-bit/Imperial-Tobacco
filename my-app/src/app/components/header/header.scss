@@ -1,0 +1,14 @@
+.header {
+    background: url(../img/header.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 72px;
+    box-shadow: 0px 4px 32px #180302;
+    .burger {
+        width: 40px;
+        height: 40px;
+        background: url(../img/header_burger.svg);
+        border: none;
+    }
+}
