@@ -1,8 +1,12 @@
-$Jack-red: #B61C3E;
-$Jack-brown: #52212E;
-$Jack-gold: #9F9363;
-
 * {
     padding: 0;
     margin: 0;
+}
+img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    user-drag: none;
+    pointer-events: none;
 }

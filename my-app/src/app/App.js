@@ -3,12 +3,13 @@ import './App.scss';
 // import Discl from './components/discl/discl';
 // import Main from './components/main/main';
 // import Product from './components/product/product';
-import Feedback from './components/feedback/feedback';
+// import Feedback from './components/feedback/feedback';
+import Journal from './components/journal/journal';
 
 function App() {
   return (
     <>
-      <Feedback/>
+      <Journal/>
     </>
   );
 }
