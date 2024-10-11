@@ -2,7 +2,8 @@ import { createReducer } from "@reduxjs/toolkit";
 
 const initialState = {
     type: '',
-    value: 1
+    value: 1,
+    pop_up: false
 };
 
 const RootReducer = createReducer(initialState, builder => {
@@ -23,6 +24,13 @@ const RootReducer = createReducer(initialState, builder => {
         })
         .addCase('CHANGE', (state, action) => {
             state.value = action.payload;
+        })
+        .addCase('TOGGLEPOPUP', (state) => {
+            if (state.pop_up) {
+                state.pop_up = false;
+            } else {
+                state.pop_up = true;
+            }
         })
 });
 

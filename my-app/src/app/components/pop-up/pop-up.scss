@@ -1,0 +1,15 @@
+.pop-up {
+    width: 496px;
+    height: 80vh;
+    background-color: #fff;
+    position: fixed;
+    top: 72px;
+    right: 0;
+    z-index: 1000;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
