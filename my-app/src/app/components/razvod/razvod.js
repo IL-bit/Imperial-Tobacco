@@ -1,4 +1,5 @@
 import './razvod.scss';
+import { Link } from 'react-router-dom';
 import ozonSvg from '../img/razvod_ozon.svg';
 import amediatekaSvg from '../img/razvod_amediateka.svg';
 
@@ -12,7 +13,7 @@ const Razvod = () => {
                 <div className="col-xxl-6 text-center">
                     <h1>Играй<br></br>и выигрывай призы!</h1>
                     <a href="#" className="tg">перейти в Telegram-бот</a>
-                    <a href="#" className="site">перейти на сайт</a>
+                    <Link to="/discl" className="site">перейти на сайт</Link>
                 </div>
                 <div className="col-xxl-2">
                     <img src={amediatekaSvg} alt="amediateka" className="img-fluid amediateka"/>
