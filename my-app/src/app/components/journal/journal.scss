@@ -4,52 +4,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    .card_1 {
-        .head {
-            background: url(../img/journal_card_img.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 550px;
-            height: 372px;
-            margin: 36px auto 0px auto;
-            box-shadow: 0px 2px 4px rgba(13, 2, 1, 0.55);
-            box-shadow: 0px 2px 4px #180302;
-        }
-        .info {
-            background: url(../img/journal_card_bg.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            min-height: 750px;
-            width: 550px;
-            margin: 0 auto;
-            margin-bottom: 64px;
-            h2 {
-                margin-bottom: 20px;
-                padding-top: 72px;
-                font-family: "Noto Serif", serif;
-                font-weight: 600;
-                font-size: 24px;
-                line-height: 32px;
-                text-align: center;
-                span {
-                    font-family: "Noto Serif", serif;
-                    font-weight: 400;
-                    font-size: 12px;
-                    line-height: 16px;
-                }
-            }
-            p {
-                margin-bottom: 16px;
-                margin-left: 20px;
-                font-family: "Noto Serif", serif;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 28px;
-            }
-        }
-    }
+    
 }
 .divider {
     background: url(../img/divider.png);
