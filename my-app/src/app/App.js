@@ -5,6 +5,7 @@ import Main from './components/main/main';
 import Product from './components/product/product';
 import Feedback from './components/feedback/feedback';
 import Journal from './components/journal/journal';
+import About from './components/about/about';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/journal" element={<Journal />} />
         <Route path="/product" element={<Product />} />
         <Route path="/feedback" element={<Feedback />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </BrowserRouter>
   );

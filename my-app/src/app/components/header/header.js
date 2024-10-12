@@ -15,10 +15,10 @@ const Header = () => {
     return (
         <>
             <div className="row header">
-                <div className="col-xxl-2 offset-5 text-center align-self-center">
+                <div className="col-xxl-2 col-xl-2 offset-5 text-center align-self-center">
                     <img src={logoSvg} alt="logo" />
                 </div>
-                <div className="col-xxl-1 offset-4 text-center align-self-center">
+                <div className="col-xxl-1 col-xl-1 offset-4 text-center align-self-center">
                     <button className={`burger ${isOpen ? 'bg2' : 'bg1'}`} onClick={handleToggle}></button>
                 </div>
             </div>

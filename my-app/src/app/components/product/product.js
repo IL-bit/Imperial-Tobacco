@@ -1,6 +1,7 @@
 import './product.scss';
 import Header from '../header/header';
 import Footer from '../footer/footer';
+import Divider from '../divider/divider';
 import originalSvg from '../img/product_original.svg';
 import chestSvg from '../img/main_chest.svg';
 import chestSvg2 from '../img/product_chest.svg';
@@ -22,7 +23,7 @@ const Product = () => {
                     <img src={originalSvg} alt="original"/>
                 </div>
             </div>
-            <div className="row divider"></div>
+            <Divider/>
             <div className="row main_section2">
                 <div className="col-xxl-6">
                     <div className="game_board text-center">
@@ -35,7 +36,7 @@ const Product = () => {
                     <img src={rubySvg} alt="ruby"/>
                 </div>
             </div>
-            <div className="row divider"></div>
+            <Divider/>
             <Footer/>
         </div>
     )

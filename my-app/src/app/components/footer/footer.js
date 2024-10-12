@@ -1,9 +1,15 @@
 import './footer.scss';
+import { useNavigate } from 'react-router-dom';
 import logoSvg from '../img/footer_logo.svg';
 import emailSvg from '../img/footer_email.svg';
 import telegrammSvg from '../img/footer_telegramm.svg';
 
 const Footer = () => {
+    const navigate = useNavigate();
+
+    const handleClick = (route) => {
+      navigate(route);
+    };
     return (
         <div className="row footer">
             <div className="col-xxl-2 mx-auto">
@@ -18,7 +24,7 @@ const Footer = () => {
                     <p>Мир Капитана<br/>и все сокровища здесь!</p>  
                 </div>
                 <div className="callback text-center">
-                    <button>обратная связь</button>
+                    <button onClick={() => handleClick('/feedback')}>обратная связь</button>
                     <img src={logoSvg} alt="logo"/>
                     <p>© 2024 Сайт «Captain Jack»</p>
                     <ul className="text-center">

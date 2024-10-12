@@ -1,13 +1,14 @@
 import './about.scss';
 import Header from '../header/header.js';
 import Footer from '../footer/footer.js';
+import Divider from '../divider/divider.js';
 
 const About = () => {
     return(
         <div className="container-fluid" id="about">
             <Header/>
             <div className="row main">
-                <div className="col-xxl-4 mx-auto text-center">
+                <div className="col-xxl-4 col-xl-6 mx-auto text-center">
                     <div className="card_1">
                         <div className="head">
                             <h2>Капитан Джек —</h2>
@@ -37,7 +38,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="row divider"></div>
+            <Divider/>
             <Footer/>
         </div>    
     )

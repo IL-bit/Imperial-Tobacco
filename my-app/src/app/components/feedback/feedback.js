@@ -9,19 +9,19 @@ const Feedback = () => {
         <div className="container-fluid" id="feedback">
             <Header/>
             <div className="row main">
-                <div class="col-xxl-4 mx-auto text-center">
+                <div className="col-xxl-4 mx-auto text-center">
                     <h1>Обратная связь</h1>
                     <p>Вы можете поделиться с нами предложениями и пожеланиями</p>
                     <form action="#">
-                        <div class="name">
+                        <div className="name">
                             <img src={userSvg} alt="#"/>
                             <input type="text" placeholder="Имя"/>
                         </div>
-                        <div class="email">
+                        <div className="email">
                             <img src={emailSvg} alt="#"/>
                             <input type="email" placeholder="Почта"/>
                         </div>
-                        <div class="text">
+                        <div className="text">
                             <img src={writeSvg} alt="#"/>
                             <textarea name="textarea" id="text" placeholder="Ваше сообщение"></textarea>
                         </div>

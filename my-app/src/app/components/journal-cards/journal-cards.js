@@ -30,7 +30,7 @@ const JournalCards = () => {
         <>
             {state.value === 1 && (
                 <div id="1">
-                    <div className="card_1">
+                    <div id="card_1">
                         <div className="head"></div>
                         <div className="info">
                             <h2>Джек — смелый и свободолюбивый пират + еще текст в три строки<br/><span>20.06.2024</span></h2>
@@ -41,7 +41,7 @@ const JournalCards = () => {
                             <p>Captain Jack является символом свободы, смелости и<br/>непоколебимой решимости отправиться в новое плавание в<br/>поисках сокровищ и приключений.</p>
                         </div>
                     </div>
-                    <div className="card_1">
+                    <div id="card_1">
                         <div className="head"></div>
                         <div className="info">
                             <h2>Джек — смелый и свободолюбивый пират + еще текст в три строки<br/><span>20.06.2024</span></h2>
@@ -52,7 +52,7 @@ const JournalCards = () => {
                             <p>Captain Jack является символом свободы, смелости и<br/>непоколебимой решимости отправиться в новое плавание в<br/>поисках сокровищ и приключений.</p>
                         </div>
                     </div>
-                    <div className="card_1">
+                    <div id="card_1">
                         <div className="head"></div>
                         <div className="info">
                             <h2>Джек — смелый и свободолюбивый пират + еще текст в три строки<br/><span>20.06.2024</span></h2>
@@ -63,7 +63,7 @@ const JournalCards = () => {
                             <p>Captain Jack является символом свободы, смелости и<br/>непоколебимой решимости отправиться в новое плавание в<br/>поисках сокровищ и приключений.</p>
                         </div>
                     </div>
-                    <div className="card_1">
+                    <div id="card_1">
                         <div className="head"></div>
                         <div className="info">
                             <h2>Джек — смелый и свободолюбивый пират + еще текст в три строки<br/><span>20.06.2024</span></h2>
@@ -78,7 +78,7 @@ const JournalCards = () => {
             )}
             {state.value === 2 && (
                 <div id="2">
-                    <div className="card_1">
+                    <div id="card_1">
                         <div className="head"></div>
                         <div className="info">
                             <h2>— смелый и свободолюбивый пират + еще текст в три строки<br/><span>20.06.2024</span></h2>
@@ -89,7 +89,7 @@ const JournalCards = () => {
                             <p>Captain Jack является символом свободы, смелости и<br/>непоколебимой решимости отправиться в новое плавание в<br/>поисках сокровищ и приключений.</p>
                         </div>
                     </div>
-                    <div className="card_1">
+                    <div id="card_1">
                         <div className="head"></div>
                         <div className="info">
                             <h2>Джек — смелый и свободолюбивый пират + еще текст в три строки<br/><span>20.06.2024</span></h2>
@@ -100,7 +100,7 @@ const JournalCards = () => {
                             <p>Captain Jack является символом свободы, смелости и<br/>непоколебимой решимости отправиться в новое плавание в<br/>поисках сокровищ и приключений.</p>
                         </div>
                     </div>
-                    <div className="card_1">
+                    <div id="card_1">
                         <div className="head"></div>
                         <div className="info">
                             <h2>Джек — смелый и свободолюбивый пират + еще текст в три строки<br/><span>20.06.2024</span></h2>
@@ -111,7 +111,7 @@ const JournalCards = () => {
                             <p>Captain Jack является символом свободы, смелости и<br/>непоколебимой решимости отправиться в новое плавание в<br/>поисках сокровищ и приключений.</p>
                         </div>
                     </div>
-                    <div className="card_1">
+                    <div id="card_1">
                         <div className="head"></div>
                         <div className="info">
                             <h2>Джек — смелый и свободолюбивый пират + еще текст в три строки<br/><span>20.06.2024</span></h2>
