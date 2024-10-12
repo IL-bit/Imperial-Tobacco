@@ -6,7 +6,7 @@ import writeSvg from '../img/feedback_write.svg';
 
 const Feedback = () => {
     return(
-        <div className="container-fluid">
+        <div className="container-fluid" id="feedback">
             <Header/>
             <div className="row main">
                 <div class="col-xxl-4 mx-auto text-center">

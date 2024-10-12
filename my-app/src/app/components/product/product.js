@@ -8,7 +8,7 @@ import rubySvg from '../img/product_ruby.svg';
 
 const Product = () => {
     return (
-        <div className="container-fluid">
+        <div className="container-fluid" id="product">
             <Header/>
             <div className="row main_section1">
                 <div className="col-xxl-6">

@@ -5,7 +5,7 @@ import amediatekaSvg from '../img/razvod_amediateka.svg';
 
 const Razvod = () => {
     return (
-        <div className="container-fluid">
+        <div className="container-fluid" id="razvod">
             <div className="row">
                 <div className="col-xxl-2 offset-1">
                     <img src={ozonSvg} alt="ozon" className="img-fluid ozon"/>

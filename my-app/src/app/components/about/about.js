@@ -4,7 +4,7 @@ import Footer from '../footer/footer.js';
 
 const About = () => {
     return(
-        <div className="container-fluid">
+        <div className="container-fluid" id="about">
             <Header/>
             <div className="row main">
                 <div className="col-xxl-4 mx-auto text-center">

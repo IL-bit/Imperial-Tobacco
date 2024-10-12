@@ -5,7 +5,7 @@ import JournalCards from '../journal-cards/journal-cards.js';
 
 const Journal = () => {
     return (
-        <div className="container-fluid">
+        <div className="container-fluid" id="journal">
             <Header/>
             <div className="row main justify-content-center">
                 <div className="col-xxl-4">

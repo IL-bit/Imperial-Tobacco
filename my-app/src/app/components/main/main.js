@@ -9,7 +9,7 @@ import sigarsSvg from '../img/main_sigars.svg';
 
 const Main = () => {
     return(
-        <div className="container-fluid">
+        <div className="container-fluid" id="main">
             <Header/>
             <div className="row main_section1">
                 <div className="col-xxl-6">
