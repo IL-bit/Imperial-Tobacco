@@ -1,4 +1,5 @@
 import './about.scss';
+import './media.scss';
 import Header from '../header/header.js';
 import Footer from '../footer/footer.js';
 import Divider from '../divider/divider.js';
@@ -8,7 +9,7 @@ const About = () => {
         <div className="container-fluid" id="about">
             <Header/>
             <div className="row main">
-                <div className="col-xxl-4 col-xl-6 mx-auto text-center">
+                <div className="col-xxl-4 col-xl-6 col-lg-8 col-md-10 col-xs-12 mx-auto text-center">
                     <div className="card_1">
                         <div className="head">
                             <h2>Капитан Джек —</h2>

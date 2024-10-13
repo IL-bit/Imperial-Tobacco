@@ -8,3 +8,39 @@
     margin-top: 0;
     padding-top: 0;
 }
+@media (min-width: 1400px) and (max-width: 1920px) {
+    #divider {
+        background: url(../img/divider_1400.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 40px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1399px) {
+    #divider {
+        background: url(../img/divider_1024.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 32px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    #divider {
+        background: url(../img/divider_768.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 32px;
+    }
+}
+@media (max-width: 767px) {
+    #divider {
+        background: url(../img/divider_375.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 24px;
+    }
+}

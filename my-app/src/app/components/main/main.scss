@@ -4,7 +4,7 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        height: 91vh;
+        height: calc(100vh - 72px);
         .col-xxl-6 {
             position: relative;
             .game_board {
@@ -46,44 +46,41 @@
             }
         }
         .phone {
-            width: 100%;
-            height: auto;
-            margin-top: 100px;
+            width: 859.46px;
+            height: 784.66px;
+            margin-top: 103px;
         }
-        .col-xxl-1 {
-            position: relative;
-            .more {
-                width: 94px;
-                height: 94px;
-                position: absolute;
-                top: auto;
-                left: auto;
-                right: 40px;
-                bottom: 36px;
-                background-color: #B61C3E;
-                border-radius: 100px;
-                border: 1.59px solid #52212E;
-                text-align: center;
-                text-transform: uppercase;
-                color: #fff;
-                font-family: "Noto Serif", serif;
-                font-weight: 800;
-                font-size: 12px;
-                line-height: 16px;
-                box-shadow: 0px 3.19px 25.5px #180302;
-                p {
-                    margin-top: 10px;
-                    margin-bottom: 10px;
-                }
+        .more {
+            width: 94px;
+            height: 94px;
+            position: absolute;
+            top: auto;
+            left: auto;
+            right: 40px;
+            bottom: 36px;
+            background-color: #B61C3E;
+            border-radius: 100px;
+            border: 1.59px solid #52212E;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+            font-family: "Noto Serif", serif;
+            font-weight: 800;
+            font-size: 12px;
+            line-height: 16px;
+            box-shadow: 0px 3.19px 25.5px #180302;
+            p {
+                margin-top: 10px;
+                margin-bottom: 10px;
             }
-        }        
+        }     
     }
     .main_section2 {
         background: url(../img/banner.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        height: 91vh;
+        height: calc(100vh - 40px);
         .col-xxl-6 {
             position: relative;
             .game_board {
@@ -95,7 +92,7 @@
                 margin-right: 103px;
                 margin-left: auto;
                 p {
-                    margin-top: 18px;
+                    padding-top: 18px;
                     color: #fff;
                     font-family: "Noto Serif", serif;
                     font-weight: 500;
@@ -123,6 +120,7 @@
                     font-family: "Noto Serif", serif;
                     font-weight: 500;
                     font-size: 18px;
+                    line-height: 24px;
                     text-transform: uppercase;
                 }
             }
@@ -139,6 +137,11 @@
                     font-size: 0;
                     line-height: 0;
                 }
+            }
+            .cigar {
+                width: 748.5px;
+                height: 694.64px;
+                margin-top: 158px;
             }
         }
     }

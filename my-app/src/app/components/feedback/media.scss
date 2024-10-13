@@ -1,0 +1,117 @@
+@media (min-width: 1400px) and (max-width: 1920px) {
+    #feedback {
+        background: url(../img/feedback_bg_1400.png);
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        form {
+            height: 216px;
+            input, textarea {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+        .send {
+            bottom: 52px;
+        }
+    }
+
+}
+@media (min-width: 1024px) and (max-width: 1399px) {
+    #feedback {
+        background: url(../img/feedback_bg_1024.png);
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        form {
+            height: 216px;
+            input, textarea {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+        .send {
+            width: 217px;
+            height: 56px;
+            bottom: 53px;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    #feedback {
+        background: url(../img/feedback_bg_768.png);
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        h1 {
+            margin-top: 52px;
+            font-size: 64px;
+            line-height: 72px;
+        }
+        p {
+            width: 446px;
+            text-align: center;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        form {
+            width: 508px;
+            height: 236px;
+            margin-top: 52px;
+            .name, .email, .text {
+                input, textarea {
+                    width: 468px;
+                    font-size: 14px;
+                    line-height: 20px;
+                }  
+            }
+        }
+        .send {
+            width: 217px;
+            height: 56px;
+            bottom: 53px;
+        }
+    }
+
+}
+@media (max-width: 767px) {
+    #feedback {
+        background: url(../img/feedback_bg_375.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;  
+        height: 100vh;  
+        h1 {
+            margin-top: 31px;
+            font-size: 20px;
+            line-height: 26px;
+        }
+        p {
+            width: 247px;
+            margin-top: 12px;
+            text-align: center;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        form {
+            width: 343px;
+            height: 296px;
+            margin-top: 40px;
+            .name, .email, .text {
+                input, textarea {
+                    width: 303px;
+                    font-size: 14px;
+                    line-height: 20px;
+                }  
+            }
+        }
+        .send {
+            width: 162px;
+            height: 48px;
+            bottom: 36px;
+        }
+    }
+
+}

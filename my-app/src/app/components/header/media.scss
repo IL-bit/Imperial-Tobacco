@@ -1,0 +1,44 @@
+@media (min-width: 1400px) and (max-width: 1920px) {
+    .header {
+        background: url(../img/header_1400.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 72px;
+        box-shadow: 0px 4px 32px #180302;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1399px) {
+    .header {
+        background: url(../img/header_1024.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 72px;
+        box-shadow: 0px 4px 32px #180302;
+        .burger {
+            margin-left: -5px;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header {
+        background: url(../img/header_768.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 72px;
+        box-shadow: 0px 4px 32px #180302;
+    }
+}
+@media (min-width: 375px) and (max-width: 767px) {
+    .header {
+        background: url(../img/header_375.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 56px;
+        box-shadow: 0px 4px 32px #180302;
+    }
+}
+

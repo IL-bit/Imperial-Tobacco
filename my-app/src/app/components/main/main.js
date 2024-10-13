@@ -1,4 +1,5 @@
 import './main.scss';
+import './media.scss';
 import Header from '../header/header';
 import Footer from '../footer/footer';
 import Divider from '../divider/divider';
@@ -13,7 +14,7 @@ const Main = () => {
     const navigate = useNavigate();
 
     const handleMoreClick = () => {
-        window.scrollTo({ top: window.scrollY + 90 * window.innerHeight / 100, behavior: 'smooth' });
+        window.scrollTo({ top: window.scrollY + 100 * window.innerHeight / 100, behavior: 'smooth' });
     };
     
 
@@ -23,24 +24,22 @@ const Main = () => {
     return(
         <div className="container-fluid" id="main">
             <Header/>
-            <div className="row main_section1">
-                <div className="col-xxl-6">
+            {/* <div className="row main_section1">
+                <div className="col-xxl-6 col-xl-6">
                     <div className="game_board text-center">
                         <img src={logoGameSvg} alt="#"/>
                         <button className="game_button"></button>
                     </div>
                     <img src={chestSvg} alt="chest" className="chest"/>                    
                 </div>
-                <div className="col-xxl-5">
-                    <img src={phoneSvg} alt="phone" className="phone"/>
-                </div>
-                <div className="col-xxl-1">
+                <div className="col-xxl-6 col-xl-6">
+                    <img src={phoneSvg} alt="phone" className="phone"/>                    
                     <button className="more" onClick={handleMoreClick}><p>арома<br/>новинки</p><img src={moreSvg} alt="#"/></button>
                 </div>
             </div>
             <Divider/>
             <div className="row main_section2">
-                <div className="col-xxl-6">
+                <div className="col-xxl-6 col-xl-6">
                     <div className="game_board text-center">
                         <p className="new">Арома<br/>Новинки</p>
                         <p>Открой для себя новые вкусы</p>
@@ -48,10 +47,10 @@ const Main = () => {
                     </div>
                     <img src={chestSvg} alt="chest" className="chest"/>
                 </div>
-                <div className="col-xxl-6">
-                    <img src={sigarsSvg} alt="#"/>
+                <div className="col-xxl-6 col-xl-6">
+                    <img src={sigarsSvg} alt="#" className="cigar"/>
                 </div>
-            </div>
+            </div> */}
             <Divider/>
             <Footer/>
         </div>

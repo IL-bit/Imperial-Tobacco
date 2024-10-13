@@ -1,4 +1,5 @@
 import './footer.scss';
+import './media.scss';
 import { useNavigate } from 'react-router-dom';
 import logoSvg from '../img/footer_logo.svg';
 import emailSvg from '../img/footer_email.svg';
@@ -12,11 +13,11 @@ const Footer = () => {
     };
     return (
         <div className="row footer">
-            <div className="col-xxl-2 mx-auto">
+            <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-xs-12 mx-auto">
                 <div className="email">
                     <img src={emailSvg} alt="email"/>
                     <a href="#">complaints@i-tob.ru</a>                    
-                    <p>Вопросы, предложения, дополнительная информация.</p>                    
+                    <p>Вопросы, предложения,<br/>дополнительная информация.</p>                    
                 </div>
                 <div className="tgbot">
                     <img src={telegrammSvg} alt="tgbot"/>
