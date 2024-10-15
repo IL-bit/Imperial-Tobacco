@@ -5,10 +5,16 @@
     background-position: center;
     background-repeat: no-repeat;
     .main {
+        .mobile {
+            display: none;
+        }
         .card_1, .card_2, .card_3 {
             border-radius: 8px;
             margin-top: 73px;
             width: 567px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
             .head {
                 height: 192px;
                 width: 550px;

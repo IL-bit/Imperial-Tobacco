@@ -6,6 +6,9 @@
         background-position: center;
         background-repeat: no-repeat;
         .main {
+            .mobile {
+                display: none;
+            }
             .card_1, .card_2, .card_3 {
                 position: relative;
                 left: 50%;
@@ -49,6 +52,9 @@
         background-position: center;
         background-repeat: no-repeat;
         .main {
+            .mobile {
+                display: none;
+            }
             .card_1, .card_2, .card_3 {
                 position: relative;
                 left: 50%;
@@ -92,6 +98,9 @@
         background-position: center;
         background-repeat: no-repeat;
         .main {
+            .mobile {
+                display: none;
+            }
             .card_1, .card_2, .card_3 {
                 position: relative;
                 left: 50%;
@@ -135,7 +144,14 @@
         background-position: center;
         background-repeat: no-repeat;
         .main {
+            .pc {
+                display: none;
+            }
+            .mobile {
+                display: block;
+            }
             .card_1, .card_2, .card_3 {
+                background: none;
                 width: 375px;
                 height: 812px;
                 position: relative;
@@ -150,29 +166,82 @@
                     }
                 }
                 .info {
+                    height: 471px;
+                    width: 100%;
+                    margin-top: 0px;
+                    padding-left: 40px;
                     p {
-                        margin-left: 33px;
-                        margin-bottom: 25px;
+                        font-size: 16px;
+                        line-height: 28px;
+                        margin: 0px;
+                        margin-bottom: 29px;
+                        width: 291.35px;
                     }
                 }
             }
             .card_1 {
-                background: url(../img/about_card_375.png);
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
+                .info {
+                    background: url(../img/about_card_375.png);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    padding-top: 60px;
+                }
             }
             .card_2 {
-                background: url(../img/about_card2_375.png);
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
+                .info {
+                    background: url(../img/about_card2_375.png);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    padding-top: 42px;
+                }
             }
             .card_3 {
-                background: url(../img/about_card3_375.png);
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
+                .info {
+                    background: url(../img/about_card3_375.png);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    padding-top: 49px;
+                    padding-left: 45px;
+                }
+            }
+            .compass {
+                position: absolute;
+                right: auto;
+                left: 4px;
+                bottom: 0;
+            }
+            .cubes {
+                position: absolute;
+                left: auto;
+                right: 20px;
+                bottom: 0;
+            }
+            .sigLeft {
+                position: absolute;
+                right: auto;
+                left: 7px;
+                bottom: 0;
+            }
+            .sigRight {
+                position: absolute;
+                left: auto;
+                right: 6px;
+                bottom: 0;
+            }
+            .compass {
+                position: absolute;
+                right: auto;
+                left: 4px;
+                bottom: 0;
+            }
+            .cubes {
+                position: absolute;
+                left: auto;
+                right: 20px;
+                bottom: 0;
             }
         }
     }
