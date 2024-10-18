@@ -1,0 +1,23 @@
+@media (max-width: 767px) {
+    #card_1 {
+        .head {
+            width: 343px;
+            height: 220px;
+            margin: 20px auto 0px auto;
+        }
+        .info {
+            min-height: 468px;
+            width: 343px;
+            padding-bottom: 56px;
+            h2 {
+                padding-top: 44px;
+                margin-bottom: 4px;
+            }
+            p {
+                width: 311px;
+                margin-right: 17px;
+                margin-bottom: 16px;
+            }
+        }
+    }
+}

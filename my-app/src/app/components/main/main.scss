@@ -1,50 +1,51 @@
 #main {
+    position: relative;
+    overflow: hidden;
     .main_section1 {
         background: url(../img/banner.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         height: calc(100vh - 72px);
-        .col-xxl-6 {
-            position: relative;
-            .game_board {
-                background: url(../img/board.png);
+        position: relative;
+        .game_board_first {
+            background: url(../img/board.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 508px;
+            width: 676px;
+            margin-right: 103px;
+            margin-left: auto;
+            img {
+                width: 447px;
+                height: 224px;
+                margin-top: 120px;
+            }
+            .game_button {
+                background: url(../img/main_button_game.svg);
                 background-position: center;
                 background-repeat: no-repeat;
-                height: 508px;
-                width: 676px;
-                margin-right: 103px;
-                margin-left: auto;
-                img {
-                    width: 447px;
-                    height: 224px;
-                    margin-top: 120px;
-                }
-                .game_button {
-                    background: url(../img/main_button_game.svg);
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    width: 250px;
-                    height: 64px;
-                    border: none;
-                    margin-top: 58px;
-                }
-            }
-            .chest {
-                background-position: left;
-                background-repeat: no-repeat;
-                width: auto;
-                height: 300px;
-                filter: blur(1.4px);
-                position: absolute; 
-                left: 0;
-                bottom: 0;
-                [alt] {
-                    font-size: 0;
-                    line-height: 0;
-                }
+                width: 250px;
+                height: 64px;
+                border: none;
+                margin-top: 58px;
             }
         }
+        .chest {
+            background-position: left;
+            background-repeat: no-repeat;
+            width: auto;
+            height: 300px;
+            filter: blur(1.4px);
+            position: absolute; 
+            left: 0;
+            bottom: 0;
+            [alt] {
+                font-size: 0;
+                line-height: 0;
+            }
+        }
+    
         .phone {
             width: 859.46px;
             height: 784.66px;
@@ -81,8 +82,8 @@
         background-position: center;
         background-repeat: no-repeat;
         height: calc(100vh - 40px);
-        .col-xxl-6 {
-            position: relative;
+        position: relative;
+        .left_side {          
             .game_board {
                 background: url(../img/board.png);
                 background-position: center;
@@ -100,7 +101,7 @@
                     line-height: 32px;
                     text-shadow: 0px 1.61px 1.61px #180302;
                 }
-                .new {
+                h1 {
                     padding-top: 120px;
                     color: #fff;
                     font-family: "Noto Serif", serif;
@@ -124,26 +125,29 @@
                     text-transform: uppercase;
                 }
             }
-            .chest {
-                background-position: left;
-                background-repeat: no-repeat;
-                width: auto;
-                height: 300px;
-                filter: blur(1.4px);
-                position: absolute; 
-                left: 0;
-                bottom: 0;
-                [alt] {
-                    font-size: 0;
-                    line-height: 0;
-                }
+        }
+
+        .chest {
+            background-position: left;
+            background-repeat: no-repeat;
+            width: auto;
+            height: 300px;
+            filter: blur(1.4px);
+            position: absolute; 
+            left: 0;
+            bottom: 0;
+            [alt] {
+                font-size: 0;
+                line-height: 0;
             }
-            .cigar {
-                width: 748.5px;
-                height: 694.64px;
-                margin-top: 158px;
-            }
+        }
+        .cigar {
+            width: 748.5px;
+            height: 694.64px;
+            margin-top: 158px;
+        }    
+        .cigar_375 {
+            display: none;
         }
     }
 }
-

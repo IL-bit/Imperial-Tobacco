@@ -17,7 +17,7 @@
             transform: translateX(-50%);
             .head {
                 height: 192px;
-                width: 550px;
+                width: 600px;
                 position: relative;
                 left: 50%;
                 transform: translateX(-50%);
@@ -91,6 +91,15 @@
                     transform: rotate(1.5deg);
                 }
             }
+        }
+        .compass, .cubes, .sigLeft, .sigRight, .telescope, .coins, .map {
+            position: absolute;
+        }
+        .compass, .sigLeft, .telescope {
+            right: auto;
+        }
+        .cubes, .sigRight, .map {
+            left: auto;
         }
     }
 }

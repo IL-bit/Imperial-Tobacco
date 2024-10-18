@@ -7,17 +7,23 @@ import amediatekaSvg from '../img/razvod_amediateka.svg';
 const Razvod = () => {
     return (
         <div className="container-fluid" id="razvod">
-            <div className="row">
-                <div className="col-xxl-2 col-xl-2 col-lg-2 offset-lg-1 col-md-2">
-                    <img src={ozonSvg} alt="ozon" className="ozon"/>
+            <div className="row justify-content-center">
+                <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-xs-4 d-flex justify-content-center">
+                    <img src={ozonSvg} alt="ozon" loading="lazy" className="ozon"/>
                 </div>
-                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-8 text-center">
+                <div className="col-xxl-6 col-xl-6 col-lg-6 text-center pc">
                     <h1>Играй<br></br>и выигрывай призы!</h1>
                     <a href="#" className="tg">перейти в Telegram-бот</a>
                     <Link to="/discl" className="site">перейти на сайт</Link>
                 </div>
-                <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-2 text-lg-end">
-                    <img src={amediatekaSvg} alt="amediateka" className="amediateka"/>
+                <div className="col-md-4 mobile"></div>
+                <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-xs-4 d-flex justify-content-center">
+                    <img src={amediatekaSvg} alt="amediateka" loading="lazy" className="amediateka"/>
+                </div>
+                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-8 col-xs-10 mobile mx-auto">
+                    <h1>Играй<br></br>и выигрывай призы!</h1>
+                    <a href="#" className="tg">перейти в Telegram-бот</a>
+                    <Link to="/discl" className="site">перейти на сайт</Link>
                 </div>
             </div>
         </div>

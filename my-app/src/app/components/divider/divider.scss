@@ -7,6 +7,8 @@
     box-shadow: 0px 0px 32px #180302;
     margin-top: 0;
     padding-top: 0;
+    position: relative;
+    overflow: hidden;
 }
 @media (min-width: 1400px) and (max-width: 1920px) {
     #divider {

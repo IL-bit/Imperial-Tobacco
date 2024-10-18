@@ -32,7 +32,7 @@
     #discl {
         background: url(../img/discl_bg_1024.png);
         background-size: cover;
-        background-position: left;
+        background-position: center;
         background-repeat: no-repeat;
         min-height: 100vh;
         .main {
@@ -86,7 +86,7 @@
         }
     }
 }
-@media (min-width: 375px) and (max-width: 767px) {
+@media (max-width: 767px) {
     #discl {
         background: url(../img/discl_bg_375.png);
         background-size: cover;
@@ -110,7 +110,7 @@
                 margin-top: 16px;
             }
             .yes {
-                margin-left: 16px;
+                margin-left: 0px;
             }
         }
     }

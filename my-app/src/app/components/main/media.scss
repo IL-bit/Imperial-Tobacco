@@ -1,7 +1,7 @@
-@media (min-width: 1400px) and (max-width: 1920px) {
+@media (min-width: 1400px) and (max-width: 1919px) {
     #main {
         .main_section1 {
-            .game_board {
+            .game_board_first {
                 height: 435px;
                 width: 532px;
                 margin-right: 43px;
@@ -23,6 +23,11 @@
             .more {
                 bottom: 40px;
             }
+            .phone {
+                width: 640px;
+                height: 583.69px;
+                margin-top: 103px;
+            }
         }
         .main_section2 {
             .game_board {
@@ -33,7 +38,7 @@
                     font-size: 20px;
                     line-height: 28px;
                 }
-                .new {
+                h1 {
                     margin-top: 0px;
                     padding-top: 90px;
                     font-size: 72px;
@@ -43,11 +48,289 @@
                     margin-top: 28px;
                 }
             }
+            .cigar {
+                width: 649.81px;
+                height: 602.96px;
+                margin-top: 79px;
+            }
             .chest {
                 width: auto;
                 height: 280px;
             } 
 
+        }
+    }
+}
+@media (min-width: 1024px) and (max-width: 1399px) {
+    #main {
+        .main_section1 {
+            .left_side_first {
+                .game_board_first {    
+                    background: url(../img/board_1024.png);
+                    background-position: center;
+                    background-repeat: no-repeat;            
+                    width: 432px;
+                    height: 353px;
+                    margin-right: -10px;
+                    margin-top: -12px;
+                    img {
+                        width: 287px;
+                        height: 144px;
+                        margin-top: 83px;
+                    }
+                    .game_button {
+                        width: 250px;
+                        height: 64px;
+                        margin-top: 34px;
+                    }
+                }
+            }            
+            .chest {
+                width: auto;
+                height: 280px;
+            }            
+            .more {
+                bottom: 40px;
+            }
+            .phone {
+                width: 456px;
+                height: 415.8px;
+                margin-top: 103px;
+            }
+        }
+        .main_section2 {
+            .left_side {
+               .game_board {
+                    background: url(../img/board_1024.png);
+                    background-position: center;
+                    background-repeat: no-repeat;            
+                    width: 432px;
+                    height: 353px;
+                    margin-right: -10px;
+                    margin-top: -12px;
+                    p {
+                        font-size: 18px;
+                        line-height: 24px;
+                        padding-top: 12px;
+                    }
+                    h1 {
+                        padding-top: 90px;
+                        font-size: 52px;
+                        line-height: 60px;
+                    }
+                    .go_to {
+                        width: 143px;
+                        height: 48px;
+                        margin-top: 10px;
+                    }
+                }
+
+            }                
+            .cigar {
+                width: 442.93px;
+                height: 411px;
+                margin-top: 125px;
+            }
+            .chest {
+                width: auto;
+                height: 280px;
+            }            
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    #main {
+        .main_section1 {
+            .left_side_first {
+                .game_board_first {    
+                    background: url(../img/board_1024.png);
+                    background-position: center;
+                    background-repeat: no-repeat;            
+                    width: 432px;
+                    height: 354px;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    margin-top: -12px;
+                    img {
+                        width: 287px;
+                        height: 144px;
+                        margin-top: 83px;
+                    }
+                    .game_button {
+                        width: 250px;
+                        height: 64px;
+                        margin-top: 34px;
+                    }
+                }
+            }            
+            .chest {
+                width: auto;
+                height: 240px;
+            }            
+            .more {
+                bottom: 40px;
+            }
+            .phone {
+                width: 520px;
+                height: 473.98px;
+                position: absolute;
+                top: auto;
+                bottom: 53px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .main_section2 {
+            height: 100vh;
+            .left_side {
+               .game_board {
+                background: url(../img/board_1024.png);
+                background-position: center;
+                background-repeat: no-repeat;            
+                width: 432px;
+                height: 354px;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-top: -12px;
+                    p {
+                        font-size: 18px;
+                        line-height: 24px;
+                        padding-top: 12px;
+                    }
+                    h1 {
+                        padding-top: 90px;
+                        font-size: 52px;
+                        line-height: 60px;
+                    }
+                    .go_to {
+                        width: 143px;
+                        height: 48px;
+                        margin-top: 10px;
+                    }
+                }
+
+            }                
+            .cigar {
+                width: 468px;
+                height: 435px;
+                position: absolute;
+                top: auto;
+                bottom: 130px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .chest {
+                width: auto;
+                height: 240px;
+            }            
+        }
+    }
+}
+@media (max-width: 767px) {
+    #main {
+        .main_section1 {
+            background: url(../img/banner_game.png);
+            background-position: center;
+            background-repeat: no-repeat; 
+            .left_side_first {
+                .game_board_first {    
+                    background: none;           
+                    width: 432px;
+                    height: 354px;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    margin-top: -12px;
+                    img {
+                        width: 343px;
+                        height: 172px;
+                        margin-top: 40px;
+                    }
+                    .game_button {
+                        width: 250px;
+                        height: 64px;
+                        margin-top: 34px;
+                    }
+                }
+            }            
+            .chest {
+                display: none;
+                width: auto;
+                height: 240px;
+            }            
+            .more {
+                bottom: 4px;
+                right: 16px;
+            }
+            .phone {
+                display: none;
+                width: 520px;
+                height: 473.98px;
+                position: absolute;
+                top: auto;
+                bottom: 53px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .main_section2 {
+            .left_side {
+               .game_board {
+                background: url(../img/board_375.png);
+                background-position: center;
+                background-repeat: no-repeat;            
+                width: 343px;
+                height: 279px;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-top: -12px;
+                    p {
+                        display: none;
+                        font-size: 18px;
+                        line-height: 24px;
+                        padding-top: 12px;
+                    }
+                    h1 {
+                        padding-top: 90px;
+                        font-size: 44px;
+                        line-height: 52px;
+                    }
+                    .go_to {
+                        width: 143px;
+                        height: 48px;
+                        margin-top: 10px;
+                    }
+                }
+
+            }                
+            .cigar {
+                display: none;
+                width: 468px;
+                height: 435px;
+                position: absolute;
+                top: auto;
+                bottom: 130px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .cigar_375 {
+                display: block;
+                width: 415.39px;
+                height: 470.93px;
+                position: absolute;
+                top: auto;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .chest {
+                display: none;
+                width: auto;
+                height: 240px;
+            }            
         }
     }
 }

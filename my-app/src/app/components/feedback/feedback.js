@@ -8,7 +8,7 @@ import writeSvg from '../img/feedback_write.svg';
 const Feedback = () => {
     return(
         <div className="container-fluid" id="feedback">
-            
+            <Header/>
             <div className="row main">
                 <div className="col-xxl-6 col-xl-6 col-lg-8 col-md-10 col-xs-12 mx-auto text-center">
                     <h1>Обратная связь</h1>
@@ -25,8 +25,7 @@ const Feedback = () => {
                         <div className="text">
                             <img src={writeSvg} alt="#"/>
                             <textarea name="textarea" id="text" placeholder="Ваше сообщение"></textarea>
-                        </div>
-                        
+                        </div>                        
                     </form>
                     <button type="submit" className="send">отправить</button>
                 </div>

@@ -5,10 +5,33 @@
     background-repeat: no-repeat;
     height: 72px;
     box-shadow: 0px 4px 32px #180302;
+    position: relative;
     .burger {
         width: 40px;
         height: 40px;
         border: none;
+        position: absolute;
+        top: 15px;        
+        left: auto;
+        right: 42px;
+    }
+    .pc {
+        width: 200px;
+        height: 32px;
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 20px; 
+        transform: translateX(-50%);
+    }
+    .mobile {
+        width: 158px;
+        height: 36px;
+        display: none;
+        position: absolute;
+        left: 50%;
+        top: 10px; 
+        transform: translateX(-50%);
     }
 }
 .bg1 {
@@ -16,4 +39,13 @@
 }
 .bg2 {
     background: url(../img/header_burger2.svg);
+}
+#overlay {
+    position: fixed;
+    top: 72px;
+    left: 0px;
+    width: 100%;
+    height: calc(100vh - 72px);
+    background-color: rgba(20, 8, 11);
+    z-index: 999;
 }

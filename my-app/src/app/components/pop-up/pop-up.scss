@@ -1,7 +1,10 @@
 .pop-up {
-    width: 496px;
-    height: 80vh;
-    background-color: #fff;
+    background: url(../img/menu_1920.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: calc(100vh - 72px);
     position: fixed;
     top: 72px;
     right: 0;
@@ -12,4 +15,45 @@
 }
 .show {
     display: block;
+}
+@media (min-width: 1400px) and (max-width: 1919px) {
+    .pop-up {
+        width: 375px;
+        height: 828px;
+        background: url(../img/menu_1440.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1399px) {
+    .pop-up {
+        width: 375px;
+        height: 696px;
+        background: url(../img/menu_1024.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .pop-up {
+        width: 375px;
+        height: 952px;
+        background: url(../img/menu_768.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+@media (max-width: 767px) {
+    .pop-up {
+        width: 100%;
+        height: 756px;
+        top: 56px;
+        background: url(../img/menu_375.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }

@@ -97,41 +97,90 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        overflow: hidden;
         .main {
             .mobile {
+                display: block;
+                position: relative;
+                height: 200px;
+                width: 100%;
+            }
+            .text {
                 display: none;
             }
-            .card_1, .card_2, .card_3 {
+            .card_1, .card_2, .card_3 {          
+                width: 550px;
                 position: relative;
                 left: 50%;
                 transform: translateX(-50%);
+                .head {
+                    width: 550px;
+                    height: 192px;
+                }
                 .info {
+                    width: 550px;
                     p {
-                        margin-left: 70px;
-                        margin-bottom: 25px;
+                        margin-left: 55px;
+                        margin-bottom: 20px;
                     }
                 }
             }
             .card_1 {
-                width: 567px;
-                height: 657px;
+                height: 630px;
                 .info {
-                    margin-top: 32px;
+                    margin-top: 29px;
                 }
             }
             .card_2 {
-                width: 578px;
                 height: 566px;
                 .info {
                     margin-top: 33px;
                 }
             }
             .card_3 {
-                width: 563px;
                 height: 487px;
+                margin-bottom: 300px;
                 .info {
-                    margin-top: 38px;
+                    margin-top: 44px;
                 }
+            }
+            .compass {
+                left: 50px;
+                bottom: 0px;
+            }
+            .cubes {
+                right: 70px;
+                bottom: 40px;
+            }
+            .sigLeft {
+                left: 100px;
+                bottom: -30px;
+            }
+            .sigRight {
+                right: 100px;
+                bottom: -70px;
+            }
+            .telescope {
+                height: 572.36px;
+                width: 105.77px;
+                left: -50px;
+                bottom: -20px;
+                transform: rotate(23.4deg);
+            }
+            .coins {
+                width: 126.18px;
+                height: 181.93px;
+                left: 40%;
+                bottom: 200px;
+                transform: rotate(-14.62deg);
+            }
+            .map {
+                width: 397.5px;
+                height: 394.3px;
+                right: -350px;
+                bottom: 150px;
+                transform: rotate(-31.83deg);
+                object-fit: cover;
             }
         }
     }
@@ -143,12 +192,16 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        overflow: hidden;
         .main {
-            .pc {
-                display: none;
-            }
             .mobile {
                 display: block;
+                position: relative;
+                height: 1px;
+                width: 100%;
+            }
+            .pc {
+                display: none;
             }
             .card_1, .card_2, .card_3 {
                 background: none;
@@ -208,40 +261,42 @@
                 }
             }
             .compass {
-                position: absolute;
-                right: auto;
                 left: 4px;
                 bottom: 0;
             }
             .cubes {
-                position: absolute;
-                left: auto;
                 right: 20px;
                 bottom: 0;
             }
-            .sigLeft {
-                position: absolute;
-                right: auto;
+            .sigLeft {                
                 left: 7px;
-                bottom: 0;
+                bottom: 120px;
             }
             .sigRight {
-                position: absolute;
-                left: auto;
-                right: 6px;
-                bottom: 0;
+                right: 5px;
+                bottom: 80px;
             }
-            .compass {
-                position: absolute;
-                right: auto;
-                left: 4px;
-                bottom: 0;
+            .telescope {
+                height: 336.8px;
+                width: 62.24px;
+                left: -10px;
+                bottom: 40px;
+                transform: rotate(23.4deg);
             }
-            .cubes {
-                position: absolute;
-                left: auto;
-                right: 20px;
-                bottom: 0;
+            .coins {
+                width: 102.24px;
+                height: 147.42px;
+                left: 30%;
+                bottom: 100px;
+                transform: rotate(-14.62deg);
+            }
+            .map {
+                width: 397.5px;
+                height: 394.3px;
+                right: -250px;
+                bottom: 80px;
+                transform: rotate(-31.83deg);
+                object-fit: cover;
             }
         }
     }

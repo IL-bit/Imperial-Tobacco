@@ -31,7 +31,7 @@
         box-shadow: 0px 4px 32px #180302;
     }
 }
-@media (min-width: 375px) and (max-width: 767px) {
+@media (max-width: 767px) {
     .header {
         background: url(../img/header_375.png);
         background-size: cover;
@@ -39,6 +39,16 @@
         background-repeat: no-repeat;
         height: 56px;
         box-shadow: 0px 4px 32px #180302;
+        .pc {
+            display: none;
+        }
+        .mobile {
+            display: block;
+        }
+        .burger {
+            top: 8px;
+            right: 20px;
+        }
     }
 }
 
