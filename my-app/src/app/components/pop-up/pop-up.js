@@ -1,13 +1,16 @@
 import './pop-up.scss';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { togglePopup } from '../../../actions.js';
 import { useNavigate } from 'react-router-dom';
 
 const PopUp = () => {
     const navigate = useNavigate();    
+    const dispatch = useDispatch();
     const isOpen = useSelector((state) => state.pop_up);    
 
     const handleClick = (route) => {
       navigate(route);
+      dispatch(togglePopup());
     };
     return(
         <div className={`pop-up ${isOpen ? 'show' : 'hide'}`}>

@@ -3,34 +3,40 @@ import { createReducer } from "@reduxjs/toolkit";
 const initialState = {
     type: '',
     value: 1,
-    pop_up: false
+    pop_up: false,
+    formData: null,
+    status: 'idle',
+    error: null
 };
 
 const RootReducer = createReducer(initialState, builder => {
     builder 
-        .addCase('NEXT', (state) => {
-            if (state.value === 9) {
-                state.value = 1;
-            } else {
-                state.value = state.value + 1;              
-            }            
+    .addCase('NEXT', (state) => {
+        state.value = state.value === 9 ? 1 : state.value + 1;
+    })
+    .addCase('BACK', (state) => {
+        state.value = state.value === 1 ? 9 : state.value - 1;
+    })
+    .addCase('CHANGE', (state, action) => {
+        state.value = action.payload;
+    })
+    .addCase('TOGGLEPOPUP', (state) => {
+        state.pop_up = !state.pop_up;
+    })
+        .addCase('SENDFORMSTART', (state) => {
+            state.status = 'sending';
         })
-        .addCase('BACK', (state) => {
-            if (state.value === 1) {
-                state.value = 9;
-            } else {
-                state.value = state.value - 1;
-            }
+        .addCase('SENDFORMSUCCESS', (state, action) => {
+            state.formData = action.payload; 
+            state.status = 'submitted';
         })
-        .addCase('CHANGE', (state, action) => {
-            state.value = action.payload;
+        .addCase('SENDFORMFAILURE', (state, action) => {
+            state.error = action.payload; 
+            state.status = 'failed';
         })
-        .addCase('TOGGLEPOPUP', (state) => {
-            if (state.pop_up) {
-                state.pop_up = false;
-            } else {
-                state.pop_up = true;
-            }
+        .addCase('CLEARFORM', (state) => {
+            state.formData = null; 
+            state.status = 'idle';
         })
 });
 

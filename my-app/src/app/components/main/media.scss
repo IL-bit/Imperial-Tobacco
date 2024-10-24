@@ -1,20 +1,22 @@
 @media (min-width: 1400px) and (max-width: 1919px) {
     #main {
         .main_section1 {
-            .game_board_first {
-                height: 435px;
-                width: 532px;
-                margin-right: 43px;
-                img {
-                    width: 343px;
-                    height: 172px;
-                    margin-top: 103px;
-                }
-                .game_button {
-                    width: 250px;
-                    height: 64px;
-                    margin-top: 34px;
-                }
+            .left_side_first {
+                .game_board_first {
+                    width: 532px;                
+                    height: 435px;
+                    margin-right: 43px;
+                    img {
+                        width: 343px;
+                        height: 172px;
+                        margin-top: 103px;
+                    }
+                    .game_button {
+                        width: 250px;
+                        height: 64px;
+                        margin-top: 34px;
+                    }
+                }              
             }
             .chest {
                 width: auto;
@@ -27,7 +29,8 @@
                 width: 640px;
                 height: 583.69px;
                 margin-top: 103px;
-            }
+            }  
+
         }
         .main_section2 {
             .game_board {
