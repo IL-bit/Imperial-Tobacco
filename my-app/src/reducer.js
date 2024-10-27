@@ -6,7 +6,8 @@ const initialState = {
     pop_up: false,
     formData: null,
     status: 'idle',
-    error: null
+    error: null,
+    loading: true
 };
 
 const RootReducer = createReducer(initialState, builder => {
@@ -23,21 +24,24 @@ const RootReducer = createReducer(initialState, builder => {
     .addCase('TOGGLEPOPUP', (state) => {
         state.pop_up = !state.pop_up;
     })
-        .addCase('SENDFORMSTART', (state) => {
-            state.status = 'sending';
-        })
-        .addCase('SENDFORMSUCCESS', (state, action) => {
-            state.formData = action.payload; 
-            state.status = 'submitted';
-        })
-        .addCase('SENDFORMFAILURE', (state, action) => {
-            state.error = action.payload; 
-            state.status = 'failed';
-        })
-        .addCase('CLEARFORM', (state) => {
-            state.formData = null; 
-            state.status = 'idle';
-        })
+    .addCase('SENDFORMSTART', (state) => {
+        state.status = 'sending';
+    })
+    .addCase('SENDFORMSUCCESS', (state, action) => {
+        state.formData = action.payload; 
+        state.status = 'submitted';
+    })
+    .addCase('SENDFORMFAILURE', (state, action) => {
+        state.error = action.payload; 
+        state.status = 'failed';
+    })
+    .addCase('CLEARFORM', (state) => {
+        state.formData = null; 
+        state.status = 'idle';
+    })
+    .addCase('TOGGLELOADING', (state) => {
+        state.loading = !state.loading;
+    })
 });
 
 export default RootReducer;

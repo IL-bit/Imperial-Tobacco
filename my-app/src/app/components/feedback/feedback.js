@@ -74,13 +74,13 @@ const Feedback = () => {
                                 placeholder="Ваше сообщение"
                                 required
                             ></textarea>
-                        </div>  
-                        <button
-                            type="submit" 
-                            className={`send ${!isFormValid ? 'disactive' : ''}`} 
-                            disabled={!isFormValid}
-                        >отправить</button>                                              
+                        </div>                                               
                     </form>
+                    <button
+                        type="submit" 
+                        className={`send ${!isFormValid ? 'disactive' : ''}`} 
+                        disabled={!isFormValid}
+                    >отправить</button> 
                 </div>
             </div>
         </div>
