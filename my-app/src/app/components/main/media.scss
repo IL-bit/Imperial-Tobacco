@@ -33,24 +33,27 @@
 
         }
         .main_section2 {
-            .game_board {
-                width: 532px;
-                height: 435px;
-                margin-right: 43px;
-                p {
-                    font-size: 20px;
-                    line-height: 28px;
-                }
-                h1 {
-                    margin-top: 0px;
-                    padding-top: 90px;
-                    font-size: 72px;
-                    line-height: 80px;
-                }
-                .go_to {
-                    margin-top: 28px;
-                }
+            .left_side {
+                .game_board {
+                    width: 532px;
+                    height: 435px;
+                    margin-right: 43px;
+                    p {
+                        font-size: 20px;
+                        line-height: 28px;
+                    }
+                    h1 {
+                        margin-top: 0px;
+                        padding-top: 90px;
+                        font-size: 72px;
+                        line-height: 80px;
+                    }
+                    .go_to {
+                        margin-top: 28px;
+                    }
+                }                
             }
+
             .cigar {
                 width: 649.81px;
                 height: 602.96px;

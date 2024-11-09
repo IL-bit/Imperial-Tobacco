@@ -26,6 +26,7 @@ const RootReducer = createReducer(initialState, builder => {
     })
     .addCase('SENDFORMSTART', (state) => {
         state.status = 'sending';
+        state.error = null;
     })
     .addCase('SENDFORMSUCCESS', (state, action) => {
         state.formData = action.payload; 
@@ -39,8 +40,16 @@ const RootReducer = createReducer(initialState, builder => {
         state.formData = null; 
         state.status = 'idle';
     })
-    .addCase('TOGGLELOADING', (state) => {
-        state.loading = !state.loading;
+    .addCase('FETCH_DATA_START', (state) => {
+        state.loading = true; 
+        state.error = null;
+    })
+    .addCase('FETCH_DATA_SUCCESS', (state) => {
+        state.loading = false; 
+    })
+    .addCase('FETCH_DATA_FAILURE', (state) => {
+        state.loading = false; 
+        state.error = 'failed';
     })
 });
 

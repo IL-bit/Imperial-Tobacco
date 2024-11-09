@@ -7,7 +7,7 @@ import logoSvg from '../img/header_logo.svg';
 import logoMobileSvg from '../img/header_logo2.svg';
 
 const Header = () => {
-    const isOpen = useSelector((state) => state.pop_up)
+    const isOpen = useSelector((state) => state.pop_up);
     const dispatch = useDispatch();
 
     const handleToggle = () => {

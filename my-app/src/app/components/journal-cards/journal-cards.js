@@ -6,25 +6,41 @@ import nextSvg from '../img/next.svg';
 import { changePage, nextPage, prevPage } from '../../../actions.js';
 import { FETCHDATAREQUEST } from '../../../middleware.js';
 import { useDispatch, useSelector } from 'react-redux';
-import Cookies from 'js-cookie';
 
 const JournalCards = () => {
     const dispatch = useDispatch();
     const state = useSelector((state) => state);
     
-    // Как будет пример входных данных, настроить их
     const offset = state.value;
-    const someField = Cookies.get(`${offset}_someField`);
     useEffect(() => {
-        const fetchData = () => {
-            if (!someField) {
+        const fetchData = async () => {
+            // Проверяем наличие данных в localStorage
+            const storedData = JSON.parse(localStorage.getItem('data'));
+            const now = new Date();
+
+            if (!storedData || !storedData[`offset_${offset}`]) {
+                // Если данных нет, выполняем запрос на сервер
                 dispatch(FETCHDATAREQUEST(offset));
+            } else {
+                const { timestamp, data } = storedData[`offset_${offset}`];
+
+                // Проверяем, не истек ли срок действия данных (1 день)
+                const expiryDate = new Date(timestamp);
+                const isExpired = (now - expiryDate) > 86400000; // 1 день в миллисекундах
+
+                if (isExpired) {
+                    // Если данные устарели, удаляем их из localStorage
+                    localStorage.removeItem(`offset_${offset}`);
+                    dispatch(FETCHDATAREQUEST(offset)); // Запрашиваем новые данные
+                } else {
+                    // Если данные актуальны, можем их использовать
+                    console.log(data); // Здесь можно обработать данные
+                }
             }
         };
+        
         fetchData();
-    }, [offset, dispatch, someField]);
-
-
+    }, [offset, dispatch]);
 
     const handleButtonClick = (newValue) => {
         dispatch(changePage(newValue));
@@ -41,37 +57,43 @@ const JournalCards = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }, [state.value]);
+
+    // Получаем данные из localStorage
+    const storedData = JSON.parse(localStorage.getItem('data'));
+    const currentData = storedData ? storedData[`offset_${offset}`]?.data : null;
     return(
         <>
-            {state.value === 1 && (
-                state.loading ? (
-                    <h1>Загрузка...</h1> // Если loading true, показываем сообщение о загрузке
-                ) : (
-                    <div id="1">
-                        <div id="card_1">
-                            <img className="head" alt="#" src={Cookies.get(`${offset}_img`)}/>
-                            <div className="info">
-                                <h2>{Cookies.get(`${offset}_h2`)}<span>{Cookies.get(`${offset}_data`)}</span></h2>
-                                <p>{Cookies.get(`${offset}_text`)}</p>
-                            </div>
-                        </div>
+            {state.loading ? (
+                <h1>Загрузка...</h1> // Если loading true, показываем сообщение о загрузке
+            ) : (
+                currentData && Object.keys(currentData).length > 0 ? (
+                    <div id={`offset_${offset}`}>
+                        {Object.keys(currentData).map(key => {
+                            const { post_text, media_list, shortname } = currentData[key];
+                            return (
+                                <div id={key} key={key}>
+                                    <img className="head" alt="#" src={media_list} />
+                                    <div className="info">
+                                        <h2>{shortname}<span>{post_text}</span></h2>
+                                        <p>{post_text}</p>
+                                    </div>
+                                </div>
+                            );
+                        })}
                     </div>
+                ) : (
+                    <p>Нет данных для отображения.</p>
                 )
             )}
             <div className="buttons">
                 <button onClick={() => handleButtonBack()} id="back"><img src={backSvg} alt="#" /></button>
-                <button onClick={() => handleButtonClick(1)} className={state.value === 1 ? 'active' : ''}>1</button>
-                <button onClick={() => handleButtonClick(2)} className={state.value === 2 ? 'active' : ''}>2</button>
-                <button onClick={() => handleButtonClick(3)} className={state.value === 3 ? 'active' : ''}>3</button>
-                <button onClick={() => handleButtonClick(4)} className={state.value === 4 ? 'active' : ''}>4</button>
-                <button onClick={() => handleButtonClick(5)} className={state.value === 5 ? 'active' : ''}>5</button>
-                <button onClick={() => handleButtonClick(6)} className={state.value === 6 ? 'active' : ''}>6</button>
-                <button onClick={() => handleButtonClick(7)} className={state.value === 7 ? 'active' : ''}>7</button>
-                <button onClick={() => handleButtonClick(8)} className={state.value === 8 ? 'active' : ''}>8</button>
-                <button onClick={() => handleButtonClick(9)} className={state.value === 9 ? 'active' : ''}>9</button>
+                {[...Array(9)].map((_, index) => (
+                    <button key={index + 1} onClick={() => handleButtonClick(index + 1)} className={state.value === index + 1 ? 'active' : ''}>
+                        {index + 1}
+                    </button>
+                ))}
                 <button onClick={() => handleButtonNext()} id="next"><img src={nextSvg} alt="#" /></button>
             </div>
-
         </> 
     )
 }

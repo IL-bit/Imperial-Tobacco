@@ -8,29 +8,33 @@
         background-repeat: no-repeat;
         height: calc(100vh - 72px);
         position: relative;
-        .game_board_first {
-            background: url(../img/board.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 508px;
-            width: 676px;
-            margin-right: 103px;
-            margin-left: auto;
-            img {
-                width: 447px;
-                height: 224px;
-                margin-top: 120px;
-            }
-            .game_button {
-                background: url(../img/main_button_game.svg);
+        .left_side_first {
+            .game_board_first {
+                background: url(../img/board.png);
                 background-position: center;
+                background-size: cover;
                 background-repeat: no-repeat;
-                width: 250px;
-                height: 64px;
-                border: none;
-                margin-top: 58px;
-            }
+                height: 508px;
+                width: 676px;
+                margin-right: 103px;
+                margin-left: auto;
+                img {
+                    width: 447px;
+                    height: 224px;
+                    margin-top: 120px;
+                }
+                .game_button {
+                    background: url(../img/main_button_game.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    width: 250px;
+                    height: 64px;
+                    border: none;
+                    margin-top: 58px;
+                }
+            }            
         }
+
         .chest {
             background-position: left;
             background-repeat: no-repeat;
@@ -86,6 +90,7 @@
         .left_side {          
             .game_board {
                 background: url(../img/board.png);
+                background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
                 height: 508px;
