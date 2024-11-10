@@ -3,9 +3,13 @@
         .main_section1 {
             .left_side_first {
                 .game_board_first {
-                    width: 532px;                
+                    width: 580px;                
                     height: 435px;
                     margin-right: 43px;
+                    background: url(../img/board_1440.png);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
                     img {
                         width: 343px;
                         height: 172px;
@@ -35,9 +39,13 @@
         .main_section2 {
             .left_side {
                 .game_board {
-                    width: 532px;
+                    width: 580px;
                     height: 435px;
                     margin-right: 43px;
+                    background: url(../img/board_1440.png);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
                     p {
                         font-size: 20px;
                         line-height: 28px;
@@ -74,7 +82,8 @@
                 .game_board_first {    
                     background: url(../img/board_1024.png);
                     background-position: center;
-                    background-repeat: no-repeat;            
+                    background-repeat: no-repeat;  
+         
                     width: 432px;
                     height: 353px;
                     margin-right: -10px;
@@ -151,7 +160,8 @@
                 .game_board_first {    
                     background: url(../img/board_1024.png);
                     background-position: center;
-                    background-repeat: no-repeat;            
+                    background-repeat: no-repeat;  
+                    background-size: cover;          
                     width: 432px;
                     height: 354px;
                     position: absolute;
@@ -240,6 +250,7 @@
             background: url(../img/banner_game.png);
             background-position: center;
             background-repeat: no-repeat; 
+            background-size: cover;
             .left_side_first {
                 .game_board_first {    
                     background: none;           

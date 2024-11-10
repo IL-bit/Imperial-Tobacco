@@ -1,22 +1,20 @@
-.pop-up {
-    background: url(../img/menu_1920.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+#pop-up {
     width: 496px;
-    height: 100vh;
+    height: calc(100vh - 72px);
     position: fixed;
     top: 72px;
     right: 0;
+    left: auto;
     z-index: 1000;
     overflow: hidden;
     nav {
+        width: 100%;
         height: 100%;
-        width: 464px;
-        margin-left: 32px;
         .about, .game, .product, .journal {
-            height: 25%;
-            width: auto;
+            width: 600px;
+            height: 30%;
+            margin-left: -32px;
+            margin-top: 10px;
             transform: rotate(-15deg);
             position: relative;
             h2 {
@@ -26,7 +24,7 @@
                 font-size: 48px;
                 line-height: 56px;
                 text-shadow: 0 4px 2px #180302;
-                margin-left: 28px;
+                margin-left: 93px;
             }
             p {
                 color: #fff;
@@ -34,67 +32,59 @@
                 font-weight: 500;
                 font-size: 18px;
                 line-height: 28px;
-                text-shadow: 0 4px 2px #180302;
-                margin-left: 28px;
+                margin-left: 93px;
+                text-shadow: 0 2px 2px #180302;
+                text-shadow: 0 2px 2px #180302;
+                text-shadow: 0 2px 2px #180302;
+                text-shadow: 0 2px 2px #180302;
             }
         }   
         .about {
+            background: url(../img/menu_1_1920.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 0 12px 32px #180302;
+            margin-top: -65px;
+            z-index: 4;
             h2 {
-                padding-top: 15px;
-            }
-            img {
-                width: 90px;
-                height: 146px;
-                position: absolute;
-                top: 20px;
-                left: auto;
-                right: 128px;
-                transform: rotate(26.95deg);
-                box-shadow: 0 2px 16px #180302;
+                padding-top: 104px;
             }
         }   
         .game {
+            background: url(../img/menu_2_1920.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 0 12px 32px #180302;
+            z-index: 3;
             h2 {
-                padding-top: 10px;
-            }
-            img {
-                width: 100%;
-                height: auto;
-                position: absolute;
-                bottom: 0;
-                top: auto;
-                left: -100px;
+                padding-top: 67px;
             }
         }   
         .product {
+            background: url(../img/menu_3_1920.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 0 12px 32px #180302;
+            z-index: 2;
             h2 {
-                padding-top: 50px;
-                margin-left: 18px;
-            }
-            p {
-                margin-left: 18px;
-            }
-            img {
-                width: 141.55px;
-                height: 249.07px;
-                position: absolute;
-                right: 20px;
-                left: auto;
-                top: 20px;
-                transform: rotate(30deg);
+                padding-top: 74px;
             }
         } 
         .journal {
+            background: url(../img/menu_4_1920.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: 1;
             h2 {
-                padding-top: 40px;
+                padding-top: 2px;
+                margin-left: 124px;
             }
-            img {
-                width: 195.68px;
-                height: 170.02px;
-                position: absolute;
-                right: 45px;
-                left: auto;
-                top: 60px;
+            p {
+                margin-left: 124px;
             }
         } 
     }
@@ -109,6 +99,25 @@
         left: 0;
         top: 0;
         box-shadow: 0 0 32px #180302;
+        z-index: 100;
+    }
+    button {
+        width: 80px;
+        height: 80px;
+        border: 1.59px solid #52212E;
+        border-radius: 100px;
+        background-color: #B61C3E;
+        color: #fff;
+        font-family: "Noto Serif", serif;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 14px;
+        position: absolute;
+        left: auto;
+        top: auto;
+        bottom: 24px;
+        right: 40px;
+        z-index: 100;
     }
 }
 .hide {
@@ -116,45 +125,4 @@
 }
 .show {
     display: block;
-}
-@media (min-width: 1400px) and (max-width: 1919px) {
-    .pop-up {
-        width: 375px;
-        height: 100vh;
-        background: url(../img/menu_1440.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-}
-@media (min-width: 1024px) and (max-width: 1399px) {
-    .pop-up {
-        width: 375px;
-        height: 100vh;
-        background: url(../img/menu_1024.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-    .pop-up {
-        width: 375px;
-        height: 100vh;
-        background: url(../img/menu_768.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-}
-@media (max-width: 767px) {
-    .pop-up {
-        width: 100%;
-        height: 100vh;
-        top: 56px;
-        background: url(../img/menu_375.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
 }
