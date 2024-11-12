@@ -50,7 +50,7 @@ const JournalCards = () => {
                     {state[`dataList_${offset}`] && state[`dataList_${offset}`].length > 0 ? (
                         state[`dataList_${offset}`].map(item => (
                             <div id={item.id} key={item.id}>
-                                {item.media_list && <img className="head" alt="#" src={item.media_list} />}
+                                {item.media_list && <img className="head" alt="#" src={`data:image/png;base64,${item.media_list}`} />}
                                 <div className="info">
                                     <h2>{item.shortname}<span>{item.post_text}</span></h2>
                                     <p>{item.post_text}</p>

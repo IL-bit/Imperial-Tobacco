@@ -1,5 +1,5 @@
 import Cookies from 'js-cookie';
-const url = 'http://79.174.93.19/api/v1';
+const url = 'https://79.174.93.19/api/v1';
 
 export const SENDFORM = (formData) => async (dispatch) => {
     dispatch({ type: 'SENDFORMSTART' });
@@ -13,15 +13,19 @@ export const SENDFORM = (formData) => async (dispatch) => {
             body: JSON.stringify(formData),
         });
         if (!response.ok) {
-            throw new Error('Network response was not ok');
+            const errorData = await response.json();
+            dispatch({ type: 'SENDFORMFAILURE', payload: errorData.message || 'Unknown error' });
+            return;
         }
         const data = await response.json();
         dispatch({ type: 'SENDFORMSUCCESS', payload: data });
         Cookies.set('wasForm', 'true', { expires: 1 });
     } catch (error) {
-        dispatch({ type: 'SENDFORMFAILURE', payload: error.message });
+        console.error(error);
+        dispatch({ type: 'SENDFORMFAILURE', payload: error.message || 'Unknown error' });
     }
 };
+
 export const FETCHDATAREQUEST = (offset) => async (dispatch) => {
     dispatch({ type: 'FETCH_DATA_START' });
     try {
@@ -33,12 +37,14 @@ export const FETCHDATAREQUEST = (offset) => async (dispatch) => {
             }
         });
         if (!response.ok) {
-            throw new Error();
+            const errorData = await response.json();
+            dispatch({ type: 'FETCH_DATA_FAILURE', payload: errorData.message || 'Unknown error' });
+            return;
         }
         const data = await response.json();
         dispatch({ type: 'FETCH_DATA_SUCCESS', payload: data });
     } catch (error) {
-        dispatch({ type: 'FETCH_DATA_FAILURE', payload: error.message });
-        throw new Error();
+        console.error(error);
+        dispatch({ type: 'FETCH_DATA_FAILURE', payload: error.message || 'Unknown error' });
     }
 };

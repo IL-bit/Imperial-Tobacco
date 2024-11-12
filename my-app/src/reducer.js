@@ -43,8 +43,8 @@ const RootReducer = createReducer(initialState, builder => {
         state.formData = action.payload; 
         state.status = 'submitted';
     })
-    .addCase('SENDFORMFAILURE', (state, action) => {
-        state.error = action.payload; 
+    .addCase('SENDFORMFAILURE', (state) => {
+        state.error = 'failed'; 
         state.status = 'failed';
     })
     .addCase('CLEARFORM', (state) => {

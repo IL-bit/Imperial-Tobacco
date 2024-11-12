@@ -237,19 +237,19 @@
         top: 56px;
         nav {
             .about, .game, .product, .journal {
-                width: 440px;
+                width: 500px;
                 height: 30%;
                 margin-top: 10px;
                 transform: rotate(-15deg);
                 h2 {
                     font-size: 40px;
                     line-height: 52px;
-                    margin-left: 63px;
+                    margin-left: 70px;
                 }
                 p {
                     font-size: 16px;
                     line-height: 24px;
-                    margin-left: 63px;
+                    margin-left: 70px;
                 }
             } 
             .about {
@@ -298,11 +298,16 @@
             }   
         }
         .left_bar {
-            display: none;
+            left: -5px;
         }
         button {
             right: 16px;
             bottom: 16px;
         }
+    }
+}
+@media (max-width: 370px) {
+    .left_bar {
+        display: none;
     }
 }

@@ -13,6 +13,9 @@ const PopUp = () => {
       navigate(route);
       dispatch(togglePopup());
     };
+    const gameClick = () => {
+        window.location.href = 'https://example.com';
+    }
     return(
         <div className={isOpen ? 'show' : 'hide'} id="pop-up">
             <nav>
@@ -20,7 +23,7 @@ const PopUp = () => {
                     <h2>О бренде</h2>
                     <p>Узнайте историю<br/>Captain Jack</p>
                 </div>
-                <div className="game" onClick={() => handleClick('/game')}>
+                <div className="game" onClick={() => gameClick()}>
                     <h2>На абордаж!</h2>
                     <p>Вперед за сокровищами!</p>
                 </div>

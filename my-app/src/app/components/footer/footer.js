@@ -21,7 +21,7 @@ const Footer = () => {
                 </div>
                 <div className="tgbot">
                     <img src={telegrammSvg} alt="tgbot"/>
-                    <a href="#">@captainjackbot</a>
+                    <a href="https://t.me/JadeSmoke_bot">@captainjackbot</a>
                     <p>Мир Капитана<br/>и все сокровища здесь!</p>  
                 </div>
                 <div className="callback text-center">
